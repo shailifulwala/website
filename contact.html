@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <link rel="stylesheet" href="contactUSFromCSS.css">
+ <script>
+  function sendWhatsAppMessage(event) {
+  event.preventDefault();
+
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  var whatsappMessage = 'Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message;
+
+  var whatsappUrl = 'https://api.whatsapp.com/send?phone=9427144667&text=' + encodeURIComponent(whatsappMessage);
+  window.open(whatsappUrl, '_blank');
+}
+
+ </script>
+</head>
+<body>
+    <nav class="navBar">
+        <ul class="nav-list">
+            <div class="logo"><img src="logo.jpeg" alt="logo"></div>
+            <li> <a href="project.html">home</a></li>
+            <li> <a href="aboutUs.html">About</a></li>
+            <li> <a href="contact.html">Contect Us</a></li>
+            <!-- <li> <a href="certificate.jpg">certificate</a></li> -->
+           
+        </ul>
+        
+    
+    </nav>
+  <center><div class="contact-container">
+    <center><h2>Contact Us</h2></center>
+    <form class="contact-form" onsubmit="sendWhatsAppMessage(event)">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</center>
+</body>
+</html>

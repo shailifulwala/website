@@ -1,0 +1,303 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.logo img{
+    width: 65%;
+    /* border: 3px solid wheat; */
+    border-radius: 50px;
+    align-items: center;
+}
+.navBar{
+    display: flex;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+.nav-list{
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+
+}
+.nav-list li{
+     list-style: none;
+     padding: 26px 30px;
+}
+.nav-list li a{
+     text-decoration: none;
+     color: white ;
+}
+.nav-list li a:hover{
+    color: rgb(138, 130, 130);
+}
+.RightNav{
+    /* background-color: blue; */
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+
+.backgroung{
+    background: rgba(0, 0, 0, 0.7) url(nailbg.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: darken;
+    
+}
+.firstSection{
+    height: 100vh;
+}
+.firstHalf{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    width: 70%;
+    border: 2px solid violet;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Times New Roman", Times, serif;;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.text-big{
+    font-size: 160%;
+    padding-bottom: 10px;
+}
+.text-small{
+    font-size: 95%;
+    text-align: justify;
+}
+.btn{
+    padding: 10px 20px;
+    margin: 23px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    /* font-size: 18px; */
+}
+.btn:hover{
+    padding: 10px 20px;
+    margin: 23px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    background-color: bisque;
+    /* font-size: 18px; */
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    margin: auto;
+    font-family: sans-serif;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+.imhFuild{
+    width: 300px;
+    /* padding-left: 40px; */
+    border-radius: 15px;
+}
+.imhFuild2{
+    width: 300px;
+    border-radius: 15px;
+    /* padding-right: 40px;   */
+}
+.sectionSubTag{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+}
+.paras{
+    padding-right: 40px;
+}
+.paras2{
+    padding-left: 40px;
+}
+.contact{
+    background-color: aliceblue;
+    height: 533px;
+}
+.text-center{
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 16px;
+    font: inherit;
+    font-size: 57px !important; 
+}
+.form{
+    max-width: 450px;
+    margin: 28px auto;
+}
+.form input{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+.btn-dark{
+    color: black;
+    border: 3px solid black;
+    font-family: ui-serif;
+}
+/* 1.25.21 */
+
+/* Set a mobile-first approach and default styles */
+
+/* Add viewport meta tag */
+meta[name="viewport"] {
+    width: device-width;
+    initial-scale: 1.0;
+  }
+  
+  /* Adjust font size and line height */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Implement responsive layout */
+  .container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust navigation menu for mobile */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 20px;
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+  
+  .navbar-menu {
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-right: 10px;
+  }
+  
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 812px) {
+    /* Adjust font size for smaller screens */
+    body {
+      font-size: 10px;
+    }
+    .backgroung{
+        background: rgba(0, 0, 0, 0.7) url(nailbg.avif);
+        background-repeat: no-repeat;
+        background-size: 385%;
+        background-blend-mode: darken;
+        
+    }
+    .box-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        /* max-width: 50%; */
+        margin: 0%;
+        /* height: 80%; */
+        padding: 17%;
+      }
+      .secondHalf img {
+        width: 269%;
+        border: 2px solid violet;
+        border-radius: 15px;
+        display: block;
+        margin: 32%;
+      }
+      /* img {
+        max-width: 137%;
+        height: 102%;
+      } */
+     
+  
+    /* Show hamburger menu and hide regular menu */
+    .navbar-toggle {
+      display: block;
+      font-size: 24px;
+    }
+  
+    .navbar-menu {
+      display: none;
+    }
+  
+    /* Collapse menu by default */
+    .navbar-collapse {
+      display: none;
+    }
+  
+    /* Expand menu when checkbox is checked */
+    .navbar-toggle:checked + .navbar-collapse {
+      display: block;
+    }
+  
+    /* Adjust menu styles for smaller screens */
+    .navbar-menu li {
+      display: block;
+      margin-bottom: 10px;
+    }
+ 
+  }
+  
+  /* Other CSS rules for styling and layout */
+  /* ... */
+  

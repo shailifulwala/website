@@ -1,0 +1,165 @@
+.contact-container {
+    background: #101010;
+    color: #ccc;
+    border-radius: 0.5cm;
+      height: 50%;
+      width: 50%;
+      margin-top: 10%;
+      align-items: center;
+      /* grid: gap 6rem;  */
+  }
+  
+  .contact-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f9004d;
+    align-items: center;
+    font-size: 5vh;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .form-group {
+    width: 70%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  } */
+  
+  .contact-container img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  button{
+    display: inline-block;
+      background: hsl(348.7, 100%, 50%);
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      width: 220px;
+      transition: ease .20s;
+      cursor: pointer;
+      padding: 10px 20px;
+  }
+  button:hover{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  @media (max-width: 812px){
+    .contact-container {
+      background: #101010;
+      color: #ccc;
+        border-radius: 0.5cm;
+        margin-top: 38%;
+        height: 80%;
+        width: 85%;
+        /* min-height: 100vh; */
+        /* display: grid; */
+        /* grid-template-columns: repeat(2,2fr); */
+        align-items: center;
+        /* grid: gap 6rem;  */
+    }
+    .navbar-toggle {
+        display: block;
+        font-size: 24px;
+      }
+    
+      .navbar-menu {
+        display: none;
+      }
+    
+      /* Collapse menu by default */
+      .navbar-collapse {
+        display: none;
+      }
+    
+      /* Expand menu when checkbox is checked */
+      .navbar-toggle:checked + .navbar-collapse {
+        display: block;
+      }
+    
+      /* Adjust menu styles for smaller screens */
+      .navbar-menu li {
+        display: block;
+        margin-bottom: 10px;
+      }
+   
+   
+  }
+
+  .logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.logo img{
+	width: 65%;
+	/* border: 3px solid wheat; */
+	border-radius: 50px;
+    align-items: center;
+}
+.navBar{
+    display: flex;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+.nav-list{
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+
+}
+.nav-list li{
+     list-style: none;
+     padding: 26px 30px;
+}
+.nav-list li a{
+     text-decoration: none;
+     color: white ;
+}
+.nav-list li a:hover{
+    color: rgb(138, 130, 130);
+}
+.RightNav{
+    /* background-color: blue; */
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
